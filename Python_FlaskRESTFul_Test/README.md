@@ -26,7 +26,7 @@ Connect with me on LinkedIn: [https://www.linkedin.com/in/vasilisplavos/](https:
 
 ### Version Information
 - Status: [ ] Stable | [ ] Beta | [x] Testing
-- Current Version: v180806.01
+- Current Version: 180806.01
 - Release Date: 07/08/2018
 - Created 07/08/2018
 - Last Updated 07/08/2018
