@@ -1,5 +1,5 @@
 # Learning APIs
-I have just started **learing how to build API**
+I have just started **learing how to build API**. If you want to share knowledge with me I can't wait to [connect with you](https://www.linkedin.com/in/vasilisplavos/).
 
 ### Things I learn:
 - API building with Python & Flask-RESTFul [Here](https://github.com/PlavosVasilis/Api/tree/master/Python_FlaskRESTFul_Test)
@@ -12,7 +12,7 @@ I have just started **learing how to build API**
 
 
 ### About the Repo
-In this repo I will upload many small Angular  Excercises.
+In this repo I will upload many small API Excercises.
 
 ### About me
 Connect with me on LinkedIn: [https://www.linkedin.com/in/vasilisplavos/](https://www.linkedin.com/in/vasilisplavos/)
