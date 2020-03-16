@@ -3,7 +3,7 @@ Checking [these](https://academind.com/learn/javascript/xhr-fetch-axios-xmlhttpr
 
 ### Things I learn:
 - Sending JavaScript Http Requests with XMLHttpRequest
-- 
+- Sending JavaScript Http Requests with the fetch() API
 - 
 
 ### Sources for Bookmarks:
