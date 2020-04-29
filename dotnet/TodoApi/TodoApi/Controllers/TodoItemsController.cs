@@ -8,9 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 
 namespace TodoApi.Controllers
+
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class TodoItemsController : ControllerBase
     {
         private readonly TodoContext _context;
