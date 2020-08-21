@@ -1,9 +1,0 @@
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\bin\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.deps.json
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\bin\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.dll
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\obj\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.csprojAssemblyReference.cache
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\obj\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.AssemblyInfoInputs.cache
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\obj\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.AssemblyInfo.cs
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\bin\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.pdb
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\obj\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.csproj.CoreCompileInputs.cache
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\obj\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.dll
-C:\Users\vplav\source\repos\Example.Users.ManagementService\Example.Users.ManagementService.Common\obj\Debug\netcoreapp3.1\Example.Users.ManagementService.Common.pdb
