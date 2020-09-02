@@ -6,7 +6,7 @@ Flask-RESTful is an extension for Flask that adds support for quickly building R
 
 ### Requirements:
 1. Python3.6
-2. Flask-RESTful
+2. Flask-RESTful  `pip install flask-restful`
 3. [Insomnia REST Client](https://insomnia.rest)
 
 ### How to run
