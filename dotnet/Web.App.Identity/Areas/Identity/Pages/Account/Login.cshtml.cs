@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Http;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.Net.Http.Headers;
+using SameSiteMode = Microsoft.AspNetCore.Http.SameSiteMode;
 
 namespace Web.App.Identity.Areas.Identity.Pages.Account
 {
@@ -79,11 +83,53 @@ namespace Web.App.Identity.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                // TODO: Edo einai to validation
-                // An result is Success ola kala!
+                // Edo einai to validation
+                // An result is Success user is validated
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    var jsCookieOptions = new CookieOptions
+                    {
+                        // this cookie expires in 3 minutes
+                        Expires = DateTime.Now.AddMinutes(3),
+
+                        // Set the cookie to HTTP only which is good practice unless you really do need
+                        // to access it client side in scripts.
+                        // HttpOnly = true,
+
+                        // Set the secure flag, which Chrome's changes will require for SameSite none.
+                        // Note this will also require you to be running on HTTPS.
+                        Secure = true,
+                        SameSite = SameSiteMode.Lax,
+                        Path = "/",
+                        Domain = "localhost"
+                    };
+                    Response.Cookies.Append("jsCookieKey", "value", jsCookieOptions);
+
+                    // this cookies is the simplest one
+                    var simpleCookieOptions = new CookieOptions{Expires = DateTime.Now.AddMinutes(20)};
+                    Response.Cookies.Append("simpleCookieKey", "v", simpleCookieOptions);
+
+
+                    var httpOnlyCookieOptions = new CookieOptions
+                    {
+                        // this cookie expires in 3 minutes
+                        Expires = DateTime.Now.AddMinutes(3),
+
+                        // Set the cookie to HTTP only which is good practice unless you really do need
+                        // not easily accessible with javascript
+                        HttpOnly = true,
+
+                        // Set the secure flag, which Chrome's changes will require for SameSite none.
+                        // Note this will also require you to be running on HTTPS.
+                        Secure = true,
+                        SameSite = SameSiteMode.Lax,
+                        Path = "/",
+                        Domain = "localhost"
+                    };
+                    Response.Cookies.Append("httpOnlyCookieKey", "value", httpOnlyCookieOptions);
+
+
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }
